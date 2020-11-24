@@ -7,7 +7,7 @@ namespace GameConsole
     {
         public static void Write (PlayerCharacter player)
         {
-            
+            Console.WriteLine(player.Name);
         }
     }
 }
