@@ -8,6 +8,11 @@ namespace GameConsole
         public static void Write (PlayerCharacter player)
         {
             Console.WriteLine(player.Name);
+
+            if (player.DaysSinceLastLogin.HasValue)
+            {
+                Console.WriteLine(player.DaysSinceLastLogin.Value);
+            }
         }
     }
 }
