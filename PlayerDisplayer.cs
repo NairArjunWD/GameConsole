@@ -29,7 +29,7 @@ namespace GameConsole
 
             int days = player.DaysSinceLastLogin.HasValue ? player.DaysSinceLastLogin.Value : -1;
 
-            Console.WriteLine($"{days} days since last login")
+            Console.WriteLine($"{days} days since last login");
         }
     }
 }
