@@ -11,7 +11,15 @@ namespace GameConsole
         public void Hit(int damage)
         {
             int damageReduction = 0;
+
+            int totalDamageTaken = damage - damageReduction;
+
+            Health -= totalDamageTaken;
+
+            Console.WriteLine($"{Name}'s ")
         }
+
+        
 
         public int? DaysSinceLastLogin {get; set;}
         public DateTime? DateOfBirth {get; set;}
