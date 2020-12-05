@@ -16,7 +16,7 @@ namespace GameConsole
 
             Health -= totalDamageTaken;
 
-            Console.WriteLine($"{Name}'s ")
+            Console.WriteLine($"{Name}'s health has been reduced by {totalDamageTaken} to {Health}.");
         }
 
         
