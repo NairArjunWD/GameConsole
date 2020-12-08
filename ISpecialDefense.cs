@@ -1,8 +1,18 @@
 
 namespace GameConsole
 {
-    public interface ISpecialDefense
+    public abstract class ISpecialDefense
     {
-        int CalculateDamageReduction(int totalDamage);
+        public abstract int CalculateDamageReduction(int totalDamage);
+
+        public static ISpecialDefense Null {get; } = new NullDefence();
+
+        private class NullDefence : ISpecialDefense
+        {
+            public override int CalculateDamageReduction(int totalDamage)
+            {
+                return 0;
+            }
+        }
     }
 }
