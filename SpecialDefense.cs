@@ -1,13 +1,13 @@
 
 namespace GameConsole
 {
-    public abstract class ISpecialDefense
+    public abstract class SpecialDefense
     {
         public abstract int CalculateDamageReduction(int totalDamage);
 
-        public static ISpecialDefense Null {get; } = new NullDefence();
+        public static SpecialDefense Null {get; } = new NullDefense();
 
-        private class NullDefence : ISpecialDefense
+        private class NullDefense : SpecialDefense
         {
             public override int CalculateDamageReduction(int totalDamage)
             {

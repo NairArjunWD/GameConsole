@@ -1,7 +1,7 @@
 
 namespace GameConsole
 {
-    class NullDefence : ISpecialDefense
+    class NullDefense : SpecialDefense
     {
         public int CalculateDamageReduction(int totalDamage)
         {
