@@ -9,6 +9,8 @@ namespace GameConsole
         {
             Console.WriteLine(player.Name);
 
+            // Last login of the Player
+
             if (player.DaysSinceLastLogin.HasValue)
             {
                 Console.WriteLine(player.DaysSinceLastLogin.Value);
@@ -17,6 +19,8 @@ namespace GameConsole
             {
                 Console.WriteLine("No value for DaysSinceLastLogin");
             }
+
+            // Player DOB
 
             if (player.DateOfBirth == null)
             {
