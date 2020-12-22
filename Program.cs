@@ -11,17 +11,20 @@ namespace GameConsole
 
             PlayerCharacter sarah = new PlayerCharacter (new DiamondSkinDefense())
             {
-                Name = "Sarah"
+                Name = "Sarah",
+                Health = 100
             };
 
             PlayerCharacter amrit = new PlayerCharacter(new IronBoneDefense())
             {
-                Name = "Amrit"
+                Name = "Amrit",
+                Health = 100
             };
 
             PlayerCharacter gentry = new PlayerCharacter(new DiamondSkinDefense())
             {
-                Name = "Gentry"
+                Name = "Gentry",
+                Health = 100
             };
             
             sarah.Hit(10);
